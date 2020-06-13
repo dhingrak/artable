@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="Artable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rYE-RA-X1s">
+                        <rect key="frame" x="8" y="169.5" width="163" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="animal_2" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-zb-EKf">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="161.5"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rYE-RA-X1s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="1oJ-WX-ml5"/>
+                <constraint firstAttribute="trailing" secondItem="rYE-RA-X1s" secondAttribute="trailing" constant="8" id="CdK-jh-Z2d"/>
+                <constraint firstItem="hr4-zb-EKf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OkF-VX-wzA"/>
+                <constraint firstItem="hr4-zb-EKf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RiV-bR-scm"/>
+                <constraint firstItem="rYE-RA-X1s" firstAttribute="top" secondItem="hr4-zb-EKf" secondAttribute="bottom" constant="8" id="aov-8y-inp"/>
+                <constraint firstAttribute="bottom" secondItem="rYE-RA-X1s" secondAttribute="bottom" constant="8" id="nyW-PO-rQ2"/>
+                <constraint firstAttribute="trailing" secondItem="hr4-zb-EKf" secondAttribute="trailing" id="w9M-w1-Ffh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="308" height="259"/>
+            <connections>
+                <outlet property="categoryImg" destination="hr4-zb-EKf" id="BqC-aE-rXe"/>
+                <outlet property="categoryLbl" destination="rYE-RA-X1s" id="OqS-9l-jt7"/>
+            </connections>
+            <point key="canvasLocation" x="173.18840579710147" y="129.91071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="animal_2" width="3150" height="2110"/>
+    </resources>
+</document>
